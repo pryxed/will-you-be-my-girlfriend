@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Will You Be My Girlfriend?</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 100px;
+  }
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 0 20px;
+  }
+</style>
+</head>
+<body>
+<h1>Will You Be My Girlfriend?</h1>
+<div>
+  <button id="yesBtn">Yes</button>
+  <button id="noBtn">No</button>
+</div>
+
+<script>
+  // Get the button elements
+  const yesBtn = document.getElementById("yesBtn");
+  const noBtn = document.getElementById("noBtn");
+
+  // Function to handle yes button click
+  function handleYesClick() {
+    window.location.href = "congratulations.html"; // Redirect to congratulations page
+  }
+
+  // Function to handle no button hover
+  function handleNoHover() {
+    alert("Nope, you can't click that!");
+  }
+
+  // Add event listeners
+  yesBtn.addEventListener("click", handleYesClick);
+  noBtn.addEventListener("mouseover", handleNoHover);
+</script>
+</body>
+</html>
